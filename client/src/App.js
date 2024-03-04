@@ -1,4 +1,3 @@
-// App.js
 // Import the necessary components from the react-router-dom package and other custom components
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Home from "./pages/Home";
@@ -8,6 +7,7 @@ import Single from "./pages/Single";
 import Write from "./pages/Write";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import "./style.scss";
 
 // Create a Layout component that defines the structure of the web page
 const Layout = () => {
