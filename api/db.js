@@ -1,5 +1,7 @@
 // db.js
 import mysql from "mysql2";
+import os from "os";
+import load_dotenv from "dotenv";
 
 load_dotenv();
 
@@ -9,8 +11,8 @@ db_password = os.getenv('DB_PASSWORD');
 db_database = os.getenv('DB_DATABASE');
 
 export const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: null,
-  database: "blog_app",
+  host: db_host,
+  user: db_user,
+  password: db_password,
+  database: db_database,
 });
